@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", serif;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 1vh;
+    position: fixed;
+    align-items: center;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1000;
+    margin-bottom: 10vh;
+}
+
+
+#menus {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    color: white;
+    font-weight: 400;
+}
+
+#menus span:hover {
+    color: rgb(255, 213, 0);
+    border-bottom: 2px solid rgb(255, 200, 0);
+    padding: 1vh;
+    cursor: pointer;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    margin-left: 2vw;
+    color: white;
+    font-size: xx-large;
+    font-weight: 450;
+    cursor: pointer;
+    font-weight: 600;
+}
+#logo i{
+    color: yellow;
+    font-style: normal;
+}
+.home{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    justify-content: center;
+    color: white;
+    width: 50vw;
+    gap: 2vh;
+}
+#iam{
+    font-size: large;
+    font-weight: 700;
+    letter-spacing: 0.6vw;
+}
+#name{
+    color: rgb(255, 255, 0);
+    font-size: xx-large;
+    letter-spacing: 0.5vw;
+    font-weight: 800;
+}
+#para{
+    width: 20vw;
+    text-wrap: wrap;
+    font-size: large;
+}
+main{
+    background-color: black;
+}
+.left button{
+    background-color: rgb(99, 99, 0);
+    color: white;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    padding: 10px;
+    width: 10vw;
+    border-radius: 15px;
+}
+.left button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+}
+.right figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 6vh;
+}
+.right img{
+    width: 600px;
+    border-radius: 100px;  
+    mask-image: radial-gradient(circle, black 540%, transparent 70%);
+    -webkit-mask-image: radial-gradient(circle, black 50%, transparent 70%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.skills{
+    background-color: black;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.skills div{
+    background-color: rgb(40, 40, 40);
+    height: 30vh;
+    border-radius: 15px;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.skills img{
+    width: 80px;
+}
+.skills div div{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.skills div div p{
+    width: 20vw;
+}
+.skills figure{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myskills,#myGallery,#hireMe{
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    
+}
+h1{
+    margin-top: 2vh;
+    border-bottom: 4px solid yellow;
+    padding-bottom: 1vh;
+}
+#gallery {
+    width: 100vw;
+    margin-top: 4vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 4vh;
+    gap: 2vw;
+    background-color: black;
+}
+#gallery figure{
+    height: 40vh;
+}
+#gallery img{
+    height: 40vh;
+    border-radius: 50px;
+    transition: transform 0.5s;
+}
+#gallery img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#HireMe{
+    display: flex;
+    width: 100vw;
+    color: white;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    height: 70vh;
+}
+#HireMe label {
+    font-weight: 600;
+    padding: 20px;
+    
+}
+form{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+input{
+    height: 4vh;
+    padding: 4px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border: none;
+}
+textarea{
+    padding: 4px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border: none;
+}
+#HireMe button{
+    background-color: rgb(99, 99, 0);
+    color: white;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    padding: 5px;
+    width: 6vw;
+    border-radius: 15px;
+    margin-bottom: 2pvh;
+}
+#HireMe button:hover{
+    background-color: grey;
+}

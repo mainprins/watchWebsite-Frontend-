@@ -1,0 +1,335 @@
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", "serif"; 
+    }
+
+    /* Making the scroll behaviour smooth */
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+    /* Declaring the blur to clear animation */
+
+    @keyframes blurToClear {
+    0% {
+        filter: blur(50px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+    }
+
+    /* Styling the body */
+
+    body{
+    padding-top: 6vh;
+    background-color: black;
+    color: white;
+
+    }
+
+    /* Styling the searchbar */
+
+    #searchbar{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    color: black;
+    }
+    #searchbar img {
+    width: 30px;
+    }
+    #searchbar input{
+    width: 90vw;
+    height: 2vh;
+    padding: 2vh;
+    border-radius: 5px;
+    border: 2px solid grey;
+    outline: none;
+    }
+
+    /* Styling the navigation bar */
+
+    #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 1vh;
+    position: fixed;
+    align-items: center;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1000;
+    margin-bottom: 10vh;
+    }
+
+    #menus {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+
+    #menus span:hover {
+    color: rgb(211, 188, 75);
+    border-bottom: 2px solid rgb(211, 181, 75);
+    padding: 1vh;
+    cursor: pointer;
+    }
+
+    #siteLogo {
+    margin-left: 2vw;
+    font-size: xx-large;
+    font-weight: 450;
+    cursor: pointer;
+    }
+
+    /* Styling the main part containing the products */
+
+    #productsList {
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    animation-name: blurToClear;
+    animation-duration: 1s;
+    }
+    #productsList .product{
+    background-color: white;
+    height: 80vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw 2vh;
+    color: black;
+    border-radius: 20px;
+    }
+    .itemSection img {
+    margin-top: 2vh;
+    width: 10vw ;
+    }
+    .itemSection {
+    height: 40vh;
+    }
+    .nameSection,.priceSection{
+    font-size: 4vh;
+    font-weight: 500;
+    }
+    p{
+    height: 20vh;
+    align-content: center;
+    }
+
+    .buynowSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    background-color: rgb(148, 148, 0);
+    color: white;
+    width: 97%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    }
+    .buynowSection:hover{
+    color: white;
+    background-color: grey;
+    }
+    .checked {
+    color: rgb(255, 225, 0);
+    }
+    .fa-star:hover {
+    cursor: pointer;
+    }
+    #product2 img{
+    width: 25vw;
+    }
+    #product3 img {
+    width: 20vw;
+    }
+    #product4 img {
+    width: 20vw;
+    }
+    #product5 img {
+    width: 20vw;
+    }
+    #product6 img {
+    width: 20vw;
+    }
+    #product7 img {
+    width: 10vw;
+    }
+    #product10 img {
+    width: 20vw;
+    }
+    #product11 img {
+    width: 20vw;
+    }
+    #product12 img {
+        width: 20vw;
+        }
+    #list{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+    /* Styling the cart section */
+
+    #cart{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 4vh;
+    background-color: black;
+    }
+    #cart h1{
+    color: white;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 1vh;
+    }
+    .cartElem {
+    width: 20vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    }
+    .cartElem input {
+    margin: 5px;
+    padding: 5px;
+    width: 60px;
+    }
+    .cartElem button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    .cartElem button:hover {
+    background-color: #d32f2f;
+    }
+    .cartElem img{
+    width: 4vw;
+    height: 8vh;
+
+    }
+    #purchase{
+    background-color: rgb(122, 122, 0);
+    width: 10vw;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    }
+    #purchase:hover{
+    background-color: grey;
+    cursor: pointer;
+    }
+    #noItems{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+
+    /* Styling the filtering section */
+
+    #categoryChecker{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+    #categoryChecker div{
+    background-color: rgb(42, 42, 42);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    #categoryChecker div:focus{
+    background-color: rgb(146, 137, 38);
+    }
+    #categoryChecker div:hover{
+    cursor: pointer;
+    }
+    
+    /* Styling the footer */
+
+    footer{
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2vh;
+        background-color: rgb(37, 35, 35);
+        }
+        #upper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60%;
+        gap: 10vw;
+        }
+        #upper div ul li{
+        margin-top: 2vh;
+        list-style-type: none;
+        }
+        #upper div ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+        #lower {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        }
+        #lower img{
+        background-color: white;
+        border-radius: 60px;
+        }
+        #lower img:hover{
+        cursor: pointer;
+        background-color: grey;
+        }

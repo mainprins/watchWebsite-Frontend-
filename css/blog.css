@@ -1,0 +1,258 @@
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", "serif"; 
+    }
+
+    /* Making the scroll behaviour smooth */
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+    /* Styling the body */
+
+    body{
+    padding-top: 6vh;
+    background-color: black;
+    color: white;
+    }
+
+    /* Styling the navigation bar */
+
+    #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 1vh;
+    position: fixed;
+    align-items: center;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1000;
+    margin-bottom: 10vh;
+    }
+
+    #menus {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+
+    #menus span:hover {
+    color: rgb(211, 188, 75);
+    border-bottom: 2px solid rgb(211, 181, 75);
+    padding: 1vh;
+    cursor: pointer;
+    }
+
+    #siteLogo {
+    margin-left: 2vw;
+    font-size: xx-large;
+    font-weight: 450;
+    cursor: pointer;
+    }
+
+    /* Styling the top part of the blog page */
+
+    #top{
+    margin-top: 8vh;
+    height: 50vh;
+    width: 100vw;
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex: column;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    }
+    #top p{
+    width: 30vw;
+    }
+    #top h1{
+    letter-spacing: 0.3vw;
+    font-size: xx-large;
+    border-bottom: 4px solid yellow;
+    padding-bottom: 1vh;
+    }
+
+    /* Styling the section containing the links to different articles */
+
+    #articles{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    }
+    #articles article{
+    width: 30vw;
+    padding: 20px;
+    height: 60vh;
+    display: flex;
+    gap: 2vh;
+    transition: transform 0.6s;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    #articles figure{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #articles figure img{
+    width: 70%;
+    }
+    #articles h2{
+    font-size: large;
+    letter-spacing: 0.1vw;
+    }
+    #articles article:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+    }
+    #articles p{
+    width: 70%;
+    height: 40%;
+    }
+    #articles a{
+    margin-left: 1vw;
+    }
+    #articles button:hover{
+    cursor: pointer;
+    }
+
+    /* Styling the full article section with related articles */
+
+    #singlearticle{
+    display: flex;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    #singlearticle figure{
+    width: 100%;
+    display: flex;
+    }
+    #singlearticle img{
+    width: 30%;
+    }
+    #singlearticle article{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    }
+    #singlearticle p{
+    width: 60vw;
+    }
+    #goback {
+    background-color: rgb(122, 122, 0);
+    width: 10vw;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    }
+    #goback:hover{
+    background-color: grey;
+    cursor: pointer;
+    }
+    #left{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-left: 2vw;
+    }
+    #right{
+    height: fit-content;
+    margin-top: 20vh;
+    padding-left: 20px;
+    width: 60%;
+    border-radius: 10px;
+    margin-right: 10vw;
+    gap: 2vh;
+    border-left: 8px solid yellow;
+    padding: 20px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    #right li{
+    list-style: none;
+    color: rgb(0, 174, 255);
+    }
+    #right li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    #right ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    }
+
+    /* Styling the footer */
+
+    footer{
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2vh;
+        background-color: rgb(37, 35, 35);
+        }
+        #upper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60%;
+        gap: 10vw;
+        }
+        #upper div ul li{
+        margin-top: 2vh;
+        list-style-type: none;
+        }
+        #upper div ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+        #lower {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        }
+        #lower img{
+        background-color: white;
+        border-radius: 60px;
+        }
+        #lower img:hover{
+        cursor: pointer;
+        background-color: grey;
+        }

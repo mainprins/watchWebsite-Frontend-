@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", "serif"; 
+    font-size: large;
+    color: white;
+}
+/* Styling the navigation bar */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 1vh;
+    position: fixed;
+    align-items: center;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1000;
+    margin-bottom: 10vh;
+    }
+
+    #menus {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+
+    #menus span:hover {
+    color: rgb(211, 188, 75);
+    border-bottom: 2px solid rgb(211, 181, 75);
+    padding: 1vh;
+    cursor: pointer;
+    }
+
+    #siteLogo {
+    margin-left: 2vw;
+    font-size: xx-large;
+    font-weight: 450;
+    cursor: pointer;
+    }
+
+    /* Styling the heros */
+.hero{
+    background-image: url("../images/aboutUsPageImages/wwww.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.hero-1{
+    background-image: url("../images/aboutUsPageImages/eeeer.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.hero-2{
+    background-image: url("../images/aboutUsPageImages/work.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.hero-3{
+    background-image: url("../images/aboutUsPageImages/work2.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.hero-4{
+    background-image: url("../images/aboutUsPageImages/eeee.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    color: brown;
+    cursor: pointer;
+    border-radius: 70px;
+    background-color: black;
+    padding-left: 8px;
+}
+ span{
+    color:whitesmoke;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+header{
+    background-image: url("../images/aboutUsPageImages/imm.jpg");
+    background-size:cover;
+    margin-top: 9vh;
+    background-position: center; 
+    padding-bottom: 4vh;
+}
+body {
+    background-color: black;
+}
+.about{
+    width: 100%;
+    padding: 80px 0px;
+    }
+.about  h1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: burlywood;
+   font-size: 3rem;
+   padding-bottom: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.079); 
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titletwo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content h1{
+    color: white;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 1vh;
+    font-size: 2rem;
+    width: fit-content;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.content p{
+    font-size: 1.5rem;
+    color: blanchedalmond;
+}
+.content h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+}
+.content h5{
+    color: white;
+    padding-left: 600px;
+    word-spacing: 2px;
+    max-width: 40%;
+}
+.content h2{
+    padding-left: 50vh;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: burlywood;
+}
+.content p{
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 2px;
+    max-width: 40%;
+}
+
+/* meet our team member*/
+.team{
+    background-color: rgb(42, 42, 42);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+.team h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+}
+.team-members{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+.team-member{
+    background-color: rgb(72, 72, 72);
+    border-radius: 8px;
+    color: white;
+    width: 450px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3 ease , box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.team-member:hover{
+    transform: scale(1.05);
+}
+.team-member img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.team-member h2{
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+.team-member p{
+    font-size: 1rem;
+    color: white;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.container form{
+    width: 670px;
+    color: white;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgba(58, 58, 58, 0.63);
+    backdrop-filter: blur(30px);
+    flex-wrap: wrap;
+}
+.container form h1{
+    color:white;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+.container form input{
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.container form input::placeholder {
+    color: rgb(183, 183, 183);
+
+}
+.container form #lastname,
+.container form #mobile{
+    margin-left: 20px;
+    
+}
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 600px;
+    max-width: 600px;
+}
+.container form h4{
+    font-size: 20px;
+    
+}
+.container form #button{
+   background-color: rgb(175, 175, 23);
+   color: white;
+   width: 8vw;
+   border: none;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container form #button:hover{
+    background: black;
+    color: white;
+    transition: .5s ease-in-out;
+    cursor:pointer;
+}
+
+
+.contact{
+    padding: 200px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.contact h1{
+    font-size: 4rem;
+    color: #abab;
+}
+.contact h4{
+    font-size: 3.5rem;
+    color: #555;
+}
+.contact h3{
+    font-size: 2.5rem;
+    color: peru;
+}
+.newlatter{
+    color: white;
+    font-size: 40px;
+    padding-right:70px;
+}
+.row a img{
+     height: 8vh;
+}
+
+.table{
+    display: flex;
+    
+}
+.tabs{
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.contents ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+.contents span{
+    color: red;
+}
+.contents{
+    display: none;
+}
+.contents.active{
+    display: block;
+}
+/* Styling the footer */
+
+footer{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: rgb(37, 35, 35);
+    }
+    #upper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+    gap: 10vw;
+    }
+    #upper div ul li{
+    margin-top: 2vh;
+    list-style-type: none;
+    }
+    #upper div ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    #lower {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+    #lower img{
+    background-color: white;
+    border-radius: 60px;
+    }
+    #lower img:hover{
+    cursor: pointer;
+    background-color: grey;
+    }

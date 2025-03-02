@@ -1,0 +1,460 @@
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", "serif";
+    }
+
+    /* Making the Scroll Behaviour smooth */
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+    /* Declaring blur to clear animation */
+
+    @keyframes blurToClear {
+    0% {
+        filter: blur(50px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+    }
+
+    /* Maintaining the css of background image in featured collections */
+
+    .black{
+    display: none;
+    }
+    .top{
+    background-image: url('../images/Samsung.jpg');
+    background-size: cover;
+    }
+
+    /* Styling the body */
+
+    body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow-x: hidden;
+    background-color: black;
+    }
+
+    /* Styling the navigation bar */
+
+    #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 1vh;
+    position: fixed;
+    align-items: center;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1000;
+    margin-bottom: 10vh;
+    }
+
+
+    #menus {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+
+    #menus span:hover {
+    color: rgb(211, 188, 75);
+    border-bottom: 2px solid rgb(211, 181, 75);
+    padding: 1vh;
+    cursor: pointer;
+    }
+
+    #siteLogo {
+    margin-left: 2vw;
+    font-size: xx-large;
+    font-weight: 450;
+    cursor: pointer;
+    }
+
+    /* Styling the infosection of featured collection */
+
+    #watchdesc{
+    width: 70%;
+    line-height: 1.5;
+    }
+
+    #infoSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin-top: 4vw;
+
+    }
+
+    #info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    justify-content: center;
+    gap: 2vh;
+    height: 35vh;
+    width: 50vw;
+    animation-duration: 2s;
+    animation-name: blurToClear;
+    }
+    #shopnow {
+    background-color: rgb(167, 146, 8);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    height: 4vh;
+    width: 6vw;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    #shopnow:hover{
+    background-color: grey;
+    }
+
+    /* Styling the sliding buttons in the featuredcollection */
+
+    #slidingButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 25vw;
+
+    }
+
+    #slidingButtons img {
+    box-shadow:
+        0 0 8px 4px rgba(255, 132, 0, 0),
+        0 0 20px 10px rgba(255, 125, 4, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    #slidingButtons img:hover {
+    box-shadow:
+        0 0 8px 4px rgb(200, 186, 2),
+        0 0 20px 10px rgb(215, 190, 1);
+    width: 30px;
+    }
+
+    /* styling the heading elements */
+
+    h1 {
+    font-size: xx-large;
+    }
+
+    h6 {
+    font-size: small;
+    letter-spacing: 0.4vw;
+    }
+
+
+
+
+
+    /* Styling the best sellers sections */
+
+    #bestSellers{
+    margin-top: 10vh;
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    #bestSellingItems{
+    height: auto;
+    width: 50vw;
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    }
+    #bestSellingItems::-webkit-scrollbar{
+    display: none;
+    }
+    #bestSellingItems div{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    }
+    #bestSellingItems img{
+    width: 10vw;
+    height: 30vh;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+    }
+    #bestSellingItems img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    cursor: pointer;
+    }
+    #bestSellers h1{
+    font-size: x-large;
+    letter-spacing: 0.3vw;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 1vh;
+    }
+    .bestsellerslider{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+    .bestsellerslider button{
+    height: 4vh;
+    width: 4vw;
+    }
+
+    /* Styling the image gallery */
+
+    #gallerySection {
+    box-shadow:
+        0 -40px 80px 40px rgba(0, 0, 0, 0.7),
+        0 -60px 120px 60px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    background-color: black;
+
+    height: 41vh;
+    }
+
+    #gallerySection img {
+    box-shadow: rgb(255, 225, 0) 0px 14px 28px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    }
+
+    #gallerySection img:hover {
+    width: 400px;
+    cursor: pointer;
+    }
+
+    /* Styling the benifits section of the homepage */
+
+    #benifits{
+    margin-top: 10vh;
+    width: 100vw;
+    display: flex;
+    height: 40vh;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+
+    }
+    #benifits article {
+    height: 25vh;
+    width: 25vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    }
+    #benifits article div{
+    width: auto;
+    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    }
+    #benifits h1{
+    font-size: large;
+    letter-spacing: 0.1vw;
+    }
+
+    /* Styling the categories section  */
+
+    #categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    width: 100vw;
+    height: 40vh;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    justify-content: center;
+
+    }
+    #categories article{
+    width: 30vw;
+    background-color: rgb(37, 35, 35);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    }
+    #categories article div{
+    width: 50%;
+    margin-left: 2vw;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    color: white;
+    }
+    #categories figure{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    }
+    #categories button{
+    background-color: rgb(138, 138, 0);
+    width: 6vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    }
+    #categories button:hover{
+    background-color: grey;
+    cursor: pointer;
+    }
+
+    /* Styling the section of promotional materials */
+
+    #promotionalMaterial{
+    width: 100vw;
+    height: 63vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #promotionalMaterial figure{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(37, 35, 35);
+    }
+    #promotionalMaterial img{
+    border-radius: 10px;
+    opacity: 0.8;
+    }
+
+    /* Styling the section of newsletter */
+
+    #newsletter{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    #newsletter form{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 35, 35);
+    gap: 2vw;
+    }
+    #newsletter form input{
+    background-color: rgb(134, 134, 134);
+    padding: 10px;
+    color: white;
+    border: none;
+    }
+    #newsletter button{
+    background-color: rgb(138, 138, 0);
+    width: 6vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    }
+    #newsletter button:hover{
+    background-color: grey;
+    cursor: pointer;
+    }
+    #newsletter h1{
+    font-size: x-large;
+    letter-spacing: 0.3vw;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 1vh;
+    }
+
+
+    /* Styling the footer */
+
+    footer{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: rgb(37, 35, 35);
+    }
+    #upper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+    gap: 10vw;
+    }
+    #upper div ul li{
+    margin-top: 2vh;
+    list-style-type: none;
+    }
+    #upper div ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    #lower {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    }
+    #lower img{
+    background-color: white;
+    border-radius: 60px;
+    }
+    #lower img:hover{
+    cursor: pointer;
+    background-color: grey;
+    }
