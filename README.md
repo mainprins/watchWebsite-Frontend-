@@ -29,3 +29,12 @@ Prince Bajgain
 # Javascript Writer
 
 Prince Bajgain
+
+# Image Sources
+
+1) Unsplash
+2) Istock
+3) shutterstock
+4) breitling
+5) rolex
+
