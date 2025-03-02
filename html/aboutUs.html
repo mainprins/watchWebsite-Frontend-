@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+<body>
+
+ 
+       <!-- About Us page including Company Information Our Mission and Vision-->
+    
+         <!-- Creating the Navbar -->
+    <nav id="navbar">
+        <span id="siteLogo" onclick="refresh()">watchget.</span>
+        <div id="menus">
+            <span id="home" onclick="home()">Home</span>
+            <span id="blog" onclick="blog()">Blog</span>
+            <span id="product" onclick="product()">Product</span>
+            <span id="research" onclick="research()">Research</span>
+            <span id="aboutUs" onclick="about()">About Us</span>
+        </div>
+    </nav>
+    <header>
+        <section class="content">
+            <div class="title"><h1>Company Information:</h1></div>
+            <p>Welcome to our watch company(Watchget.) Where we specialize in selling top notch watch established in 2025.
+            </p>
+            <p>Our product is made for those who are interested in luxurious and branded collection of watches.Our product is reliable and trusted. From the heart of itahari, we design each watches with meticulous attention to every detailing of the watch.
+            </p>
+            <div class="title"><h1>mission and vision:</h1></div>
+            
+            <div class="titletwo"><h3>mission:</h3></div>
+            
+            <p>our mission is to design luxurious watch that not only tells time but also shows the elegence to the person wearing it.
+            </p>
+            <p>We offer clients with the best watches that has touch of both luxury and ellegance.</p>
+
+            <div class="titletwo"><h3>vision:</h3></div>
+            
+            <p>our vision is to lead the the industry and provide top level of customer services.</p>
+        </section>
+    </header>
+
+       <!--- meet our team started-->
+
+    <section class="team">
+        <h1>Meet Our Team Members</h1>
+        <div class="team-members">
+        <div class="team-member" onclick="goToProfile('roshambabu')">
+            <img src="../images/aboutUsPageImages/img.jpg" alt="Roshambabu Lamichhane">
+            <h2>Roshambabu Lamichhane</h2>
+            <p>Designed About Us Page</p>
+        </div>
+        <div class="team-member" onclick="goToProfile('prince')">
+            <img src="../images/aboutUsPageImages/work2.jpg" alt="Prince Bajagain">
+            <h2>Prince Bajgain</h2>
+            <p> Designed Home Page And Product Page </p>
+        </div>
+        <div class="team-member" onclick="goToProfile('Ayush')">
+            <img src="../images/aboutUsPageImages/work.jpg" alt="Ayush Neupane">
+            <h2>Aayush Neupane</h2>
+            <p>Designed Blog page</p>
+        </div>
+        <div class="team-member" onclick="goToProfile('sangam')">
+            <img src="../images/aboutUsPageImages/eeeer.jpg" alt="Sangam Shrestha">
+            <h2>Sangam Shrestha</h2>
+            <p>Designed Research Page </p>
+        </div>
+        <div class="team-member" onclick="goToProfile('Rohan')">
+            <img src="../images/aboutUsPageImages/eeee.jpg" alt="Rohan Subba">
+            <h2>Rohan Subba</h2>
+            <p>Also Designed Research Page</p>
+        </div>
+    </div>
+       
+    </section>
+
+
+
+    <!--contact us--->
+    <div class="container">
+        <form id="contactForm">
+            <h1>Contact Us</h1>
+            <input type="text" id="firstname" placeholder="Firstname"required>
+            <input type="text" id="lastname" placeholder="Lastname"required>
+            <input type="email" id="email" placeholder="Email"required>
+            <input type="text" id="mobile" placeholder="Mobile"required>
+            <textarea id="feedback" placeholder="We Accept Your Feedback" required></textarea>
+            <input type="submit" value="Send" id="button">
+             
+        </form>
+    </div> 
+      <!-- Creating The Footer Section -->
+
+  <footer>
+    <div id="upper">
+      <span id="siteLogo">watchget.</span>
+      <div id="left">
+        <h3>Account</h3>
+        <ul>
+          <li>My Account</li>
+          <li>Order History</li>
+          <li>Notification Settings</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+      <div id="second">
+        <h3>Quick Links</h3>
+        <ul>
+          <li onclick="home()">Home</li>
+          <li onclick="blog()">Blog</li>
+          <li onclick="product()">Product</li>
+          <li>Research</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div id="third">
+        <h3>Shop Now</h3>
+        <ul>
+          <li id="smartt">Smart Watches</li>
+          <li id="luxuryy">Luxury watches</li>
+          <li id="normall">Normal Watches</li>
+        </ul>
+      </div>
+      <div id="last">
+        <h3>Help</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>Community Guidelines</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lower">
+      <img src="../images/social.png" width="30px" alt="FacebookIcon">
+      <img src="../images/instagram.png" width="30px" alt="InstagramIcon">
+    </div>
+  </footer>
+    <script src="../javascript/about.js"></script>
+    
+
+</body>
+<script>
+    function goToProfile(member) {
+        // Navigation to the specific Portfolio
+        window.location.href = member + "-profile.html";
+    }
+</script>

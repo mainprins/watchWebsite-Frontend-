@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Section</title>
+    <link rel="stylesheet" href="../css/research.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        </style>
+</head>
+
+<body>
+    <!-- Creating a navbar -->
+  <nav id="navbar">
+    <span id="siteLogo" onclick="refresh()">watchget.</span>
+    <div id="menus">
+        <span id="home" onclick="home()">Home</span>
+        <span id="blog" onclick="blog()">Blog</span>
+        <span id="product" onclick="product()">Product</span>
+        <span id="research" onclick="research()">Research</span>
+        <span id="aboutUs" onclick="about()">About Us</span>
+    </div>
+   </nav>
+   <main>
+    <div id="mainHead">
+
+    <h2 style="color: white; display: flex; justify-content: center; align-items: center; border-bottom: 2px solid yellow; padding-bottom: 1vh; width: fit-content;">Watch E-commerce Design and layout Comparison </h2>
+
+    </div>
+    <section class="ss">
+        <h2>Screenshots of website </h2>
+        <div class="screenshots">
+            <div class="screenshot">
+                <img src="../screenshots/homepage.png" alt="homepage">
+                <p><b>Watchget.</b></p>
+            </div>
+            <div class="screenshot">
+                <a href="https://www.vacheron-constantin.com" target="_blank"><img src="../screenshots/vacheron.png" alt="vacheron constantin"></a>
+                 <p><b>Vacheron constantin</b></p>
+            </div>
+        </div>
+        <div class="screenshots">
+            <div class="screenshot">
+                <a href="https://www.cartier.com/en-us/home" target="_blank" ><img src="../screenshots/cartierweb.png" alt="cartier"></a>
+                <p><b>Cartier</b></p>
+            </div>
+            <div class="screenshot">
+               <a href="https://www.longines.com" target="_blank"><img src="../screenshots/longines.png" alt="Longines"></a>
+                <p><b>Longines</b></p>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="comparison">
+        <h2>Comparison of Websites</h2>
+    </div>
+    <section class="table comparison">
+        <table  width="100%">
+            <thead>
+                <tr>
+                    <th>Basis</th>
+                    <th>Watchget.</th>
+                    <th>Vacheron constantin</th>
+                    <th>Cartier</th>
+                    <th>Longines</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visual Design</th>
+                    <td>Dark background,clean typography<br> and elegance</td>
+                    <td>neutral color palette,</br>
+                        minimalistic design,grid Structure</td>
+                    <td>Focuses on Lucxury, and high quality</br>image and advanced color palette</td>
+                    <td>Emphasizes on classic and traditional </br>design elements.</td>
+                </tr>
+                <tr>
+                    <td>User Interface</td>
+                    <td>Icon based Features,</br>visual hierarchy and contrast</td>
+                    <td>Lucxury and usability,</br>
+                        touch friendly</td>
+                    <td>Simple layout design and</br> easy navigation</td>
+                    <td>Well organized design, accessible and </br> searchable</td>
+                </tr>
+                <tr>
+                    <td>User Experience</td>
+                    <td>Simple, straightforward inormation</br>easy navigation</td>
+                    <td>Quick access,high visual quality,</br>
+                        luxurious, seamless</td>
+                    <td>Good experience with vibrant components </br>and a narrative aspect</td>
+                    <td>prioritizes user convenience, simplicity, and details</td>
+                </tr>
+                <tr>
+                    <td>Technologies Used</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>HTML5, CSS3, React.js, WebGl</td>
+                    <td>HTML,CSS, Vue.js, Node.js</td>
+                    <td>Python, PHP, Node.js, </td>
+                </tr>
+                <tr>
+                    <td>Navigation Structure</td>
+                    <td>linear navigation and top bar</br> with links</td>
+                    <td>intuitive, elegant, and</br>
+                        user-centric</td>
+                    <td>Comprehensive, detailed and <br> catagorized navigation</td>
+                    <td>Simple, clear, efficient navigation</td>
+                </tr>
+                <tr>
+                    <td>Features and Functionality</td>
+                    <td>Features highlights with icons, </br>product carousel, clickable images</td>
+                    <td>Product Display, Personalization</br>
+                        Lucxury Storytelling</td>
+                    <td>High-resolution images, interactive and </br> personalized</td>
+                    <td>Detailed product descriptions, and</br> customer support</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="section-button">
+        <div id="content" style="display: none;">
+            <p>After the comparision with three different watch websites with our website, we have found all the websites has used different styleing, format and </br>
+             layout and reflect their own brand identities. According to the research, the homepage of vacheron constantin mainly focuses on style with sophisticated </br>
+             colors and high-quality visuals while cartier is focused on luxurious advanced color palatte and longines emphasizes on classic and traditoional design</br>
+             elements, as we have used dark background with eleganece imagery.</p> </br>.
+            <p> Hence, it is certain that while using all the four websites, user will be experiencing a different experience. As these websites including 'watchget.' has </br>
+                distinct design and features.</p>
+            </div>
+        <button id="toggleButton">show content</button>
+        
+        
+    </section>
+   </main>
+   <!-- Creating The Footer Section -->
+
+  <footer>
+    <div id="upper">
+      <span id="siteLogo">watchget.</span>
+      <div id="left">
+        <h3>Account</h3>
+        <ul>
+          <li>My Account</li>
+          <li>Order History</li>
+          <li>Notification Settings</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+      <div id="second">
+        <h3>Quick Links</h3>
+        <ul>
+          <li onclick="home()">Home</li>
+          <li onclick="blog()">Blog</li>
+          <li onclick="product()">Product</li>
+          <li>Research</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div id="third">
+        <h3>Shop Now</h3>
+        <ul>
+          <li id="smartt">Smart Watches</li>
+          <li id="luxuryy">Luxury watches</li>
+          <li id="normall">Normal Watches</li>
+        </ul>
+      </div>
+      <div id="last">
+        <h3>Help</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>Community Guidelines</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lower">
+      <img src="../images/social.png" width="30px" alt="FacebookIcon">
+      <img src="../images/instagram.png" width="30px" alt="InstagramIcon">
+    </div>
+  </footer>
+   <script src="../javascript/research.js"></script>
+</body>
+
+</html>

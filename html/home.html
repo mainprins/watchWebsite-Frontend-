@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Importing to use the fonts from google fonts -->
+    
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+      </style>
+  <title>HomePage</title>
+</head>
+<body>
+  <div class="black"></div>
+  <!-- Creating a navbar -->
+  <nav id="navbar">
+      <span id="siteLogo" onclick="refresh()">watchget.</span>
+      <div id="menus">
+        <span id="home" onclick="home()">Home</span>
+        <span id="blog" onclick="blog()">Blog</span>
+        <span id="product" onclick="product()">Product</span>
+        <span id="research" onclick="research()">Research</span>
+        <span id="aboutUs" onclick="about()">About Us</span>
+    </div>
+  </nav>
+  <!-- Creating main section of the homepage -->
+  <main class="main">
+    <div class="top">
+    <section id="infoSection">
+      <article id="info">
+        <h6 id="watchget's">Watchget's</h6>
+        <h1 id="watchName">Samsung</h1>
+        <p id="watchdesc">
+          Samsung watches can be the better choice for you if you want the durabilty and luxury both included in you watch.Both smart as well as normal watches are available to buy in our site.
+        </p>
+        <button id="shopnow" onclick="product()">Shop Now</button>
+      </article>
+      <!-- Creating sliding buttons for the slider -->
+      <article id="slidingButtons">
+          <img src="../images/prev.png" width="20px" onclick="prevButton()" alt="PreviousButton">
+          <img src="../images/after.png" width="20px" onclick="afterButton()" alt="AfterButton">
+      </article>
+    </section>
+    <!-- Creating the slider -->
+    <section id="gallerySection" src="gallerySection">
+        <img id="item1" onclick="itemClicked(this)" src="../images/Breitling.jpg" alt="Breitling">
+        <img id="item2" onclick="itemClicked(this)" src="../images/Omega.jpg" alt="Omega">
+        <img id="item3" onclick="itemClicked(this)" src="../images/rolex.jpg" alt="Rolex">
+        <img id="item4" onclick="itemClicked(this)" src="../images/Cartier.jpg" alt="Cartier">
+    </section>
+  </div>
+  <div class="mid">
+    <!-- Creating Best Sellers Part -->
+    <section id="bestSellers">
+      <h1>Best Sellers</h1>
+      <div class="bestsellerslider">
+        <button id="prev" onclick="prev()">
+          <i class="fa fa-chevron-left"></i> 
+        </button>
+      
+        <article id="bestSellingItems">
+          <div>
+            <img src="../images/navitimer.jpg" alt="Navitimer">
+            <img src="../images/submariner.jpg" alt="Submariner">
+            <img src="../images/daydate.jpg" alt="Daydate">
+          </div>
+          <div>
+            <img src="../images/navitimer.jpg" alt="Navitimer">
+            <img src="../images/submariner.jpg" alt="Submariner">
+            <img src="../images/daydate.jpg" alt="Daydate">
+          </div>
+          <div>
+            <img src="../images/navitimer.jpg" alt="Navitimer">
+            <img src="../images/submariner.jpg" alt="Submariner">
+            <img src="../images/daydate.jpg" alt="Daydate">
+          </div>
+        </article>
+        <button id="next" onclick="next()">
+          <i class="fa fa-chevron-right"></i> 
+        </button>
+      </div>
+      
+    </section>
+
+    <!-- Creating Benifits Section -->
+
+    <section id="benifits">
+      <article>
+        <img src="../images/cod.png" width="60px" alt="CashOnDelivery">
+        <div id="information">
+          <h1>CASH ON DELIVERY</h1>
+          <p>We Provide Cash on delivery service<br>
+            for your convenience and trust.<br>
+        </div>
+      </article>
+      <article>
+        <img src="../images/clock.png" width="60px" alt="InTimeDelivery">
+        <div id="information">
+          <h1>IN TIME DELIVERY</h1>
+          <p>
+            We deliver your product on time<br>
+            and take care of your products <br>
+            as well during delivery.
+          </p>
+        </div>
+      </article>
+      <article>
+        <img src="../images/secure.png" width="60px" alt="SecurePayment">
+        <div id="information">
+          <h1>SECURE PAYMENT</h1>
+          <p>We assure that the payment occurs<br>
+            in a safe way without harming your<br>
+            privacy.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Creating Categories Section -->
+
+    <section id="categories">
+      <article id="smartWatches">
+        <div id="information">
+          <h1>SMART WATCHES</h1>
+          <p>You can buy several kinds of smart watches from our site.</p>
+          <button id="smartBtn">Buy Now</button>
+        </div>
+        <figure><img src="../images/smart-watch.png" alt="SmartWatch" width="90px"></figure>
+      </article>
+      <article id="luxury">
+        <div id="information">
+          <h1>LUXURY WATCHES</h1>
+          <p>You can buy several kinds of luxury watches from our site.</p>
+          <button id="luxuryBtn">Buy Now</button>
+        </div>
+        <figure><img src="../images/diamond.png" alt="SmartWatch" width="90px"></figure>
+      </article>
+      <article id="normalWatches">
+        <div id="information">
+          <h1>NORMAL WATCHES</h1>
+          <p>You can buy several kinds of normally designed and cheap watches from our site.</p>
+          <button id="normalBtn">Buy Now</button>
+        </div>
+        <figure><img src="../images/wrist-watch.png" alt="SmartWatch" width="90px"></figure>
+      </article>
+    </section>
+
+    <!-- Creating promotionalMaterial Section -->
+
+    <section id="promotionalMaterial">
+      <figure><img src="../images/winterSale.png" alt="WinterSale" width="100%"></figure>
+    </section>
+
+    <!-- Creating The NewsLetter -->
+
+    <section id="newsletter">
+      <h1>GET REGULAR UPDATES</h1>
+      <form action="submit">
+        <input type="text" placeholder="Enter Your Email"> <button>Subscribe</button>
+      </form>
+    </section>
+  </div>
+  </main>
+
+  <!-- Creating The Footer Section -->
+
+  <footer>
+    <div id="upper">
+      <span id="siteLogo">watchget.</span>
+      <div id="left">
+        <h3>Account</h3>
+        <ul>
+          <li>My Account</li>
+          <li>Order History</li>
+          <li>Notification Settings</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+      <div id="second">
+        <h3>Quick Links</h3>
+        <ul>
+          <li onclick="home()">Home</li>
+          <li onclick="blog()">Blog</li>
+          <li onclick="product()">Product</li>
+          <li>Research</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div id="third">
+        <h3>Shop Now</h3>
+        <ul>
+          <li id="smartt">Smart Watches</li>
+          <li id="luxuryy">Luxury watches</li>
+          <li id="normall">Normal Watches</li>
+        </ul>
+      </div>
+      <div id="last">
+        <h3>Help</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>Community Guidelines</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lower">
+      <img src="../images/social.png" width="30px" alt="FacebookIcon">
+      <img src="../images/instagram.png" width="30px" alt="InstagramIcon">
+    </div>
+  </footer>
+  <script src="../javascript/home.js"></script>
+</body>
+</html>

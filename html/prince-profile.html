@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prince.css">
+    <title>PrinceBajgain</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IE+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Creating a navbar -->
+    <nav id="navbar">
+        <span id="logo">PR<i>I</i>NCE<i>.</i></span>
+        <a href="#" id="mobileButtons">
+          <span><i class="fa fa-bars" id="bar" aria-hidden="true"></i>
+          </span>
+          <span><i class="fa fa-times" id="cross"></i>
+          </span>
+        </a>
+        <div id="menus">
+            <span id="home">Home</span>
+            <span id="Skills">Skills</span>
+            <span id="Gallery">Gallery</span>
+            <span id="Hire">Hire</span>
+        </div>
+    </nav>
+    <!-- Creating main section of info -->
+    <main id="main">
+       <div class="home">
+         <div class="left">
+            <div id="iam">
+               <p>I AM</p>
+            </div>
+            <div id="name">
+               <p>PRINCE BAJGAIN</p>
+            </div>
+            <div id="para">
+               <p>My name is Prince Bajgain.I have several IT skills filled within me . You can contact me if you want to take benifit from some .</p>
+            </div>
+            <button class="hireme">HIRE ME</button>
+          </div> 
+          <div class="right">
+            <figure><img src="../images/princeImages/prince.jpeg" alt="PrinceBajgain"></figure>
+          </div>
+       </div> 
+       <!-- Creating my skills section -->
+       <div id="myskills">
+        <h1>MY SKILLS</h1>
+       </div>
+       <div class="skills">
+          <div id="firstSkill">
+            <div id="info">
+              <h2>APPLICATION DEVELOPMENT</h2>
+              <p>I have sevarals skills related to application devlopment which includes development of all sorts of applications.</p>
+            </div>
+            <figure><img src="../images/princeImages/application.png" alt="Application"></figure>
+          </div>
+          <div id="secondSkill">
+            <div id="info">
+                <h2>WEB DEVLOPMENT</h2>
+                <p>I have skills which enable me to build sevral kinds of websites with both frontend and backend features within them.</p>
+            </div>
+            <figure><img src="../images/princeImages/internet.png" alt="Website"></figure>
+          </div>
+          <div id="thirdSkill">
+            <div id="info">
+               <h2>WEB DESIGNING</h2>
+               <p>I have several creative design skills which enables me to design several kinds of design of different webpages.</p>
+            </div>
+            <figure><img src="../images/princeImages/web-design.png" alt="Design"></figure>
+          </div>
+       </div>
+       <!-- Creating gallery section -->
+       <div id="myGallery">
+        <h1>MY GALLERY</h1>
+       </div> 
+       <div id="gallery">
+          <figure><img src="../images/princeImages/prince1.jpg"></figure>
+          <figure><img src="../images/princeImages/prince2.jpg"></figure>
+          <figure><img src="../images/princeImages/prince3.jpg"></figure>
+       </div> 
+       <div id="hireMe">
+        <h1>HIRE ME</h1>
+       </div>
+       <div id="HireMe">
+
+         <!-- Creating a form -->
+        <form action="submit">
+           <label for="name">Full Name :</label>
+           <input type="text" placeholder="Enter Your Name" required>
+           <label for="email">Email :</label>
+           <input type="text" placeholder="Enter Your Email" required>
+           <label for="message">Message :</label>
+           <textarea name="message" id="Message" placeholder="Enter Your Message ....." style="max-width: 300px; max-height: 130px; min-width: 190px; min-height: 50px;"></textarea>
+           <button type="submit">Send</button>
+        </form>
+       </div>    
+    </main>
+    <script src="../javascript/prince.js"></script>
+</body>
+</html>

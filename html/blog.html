@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Page</title>
+<link rel="stylesheet" href="../css/blog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+<body>
+
+<!-- Creating The Navbar -->
+
+<nav id="navbar">
+    <span id="siteLogo" onclick="refresh()">watchget.</span>
+    <div id="menus">
+        <span id="home" onclick="home()">Home</span>
+        <span id="blog" onclick="blog()">Blog</span>
+        <span id="product" onclick="product()">Product</span>
+        <span id="research" onclick="research()">Research</span>
+        <span id="aboutUs" onclick="about()">About Us</span>
+    </div>
+</nav>
+<main>
+
+    <!-- Creating the released article heading section -->
+
+    <section id="top">
+        <h1>RELEASED ARTICLES</h1>
+        <p>This page includes all the released articles related to the technologice,commerce etc. related to watch industries.</p>
+    </section>
+
+    <!-- Creating the boxes filled with different clickable articles -->
+
+    <section id="articles">
+    <article id="first" class="article" onclick="clickedonArticle(this)">
+        <figure><img src="../images/about.jpg" alt="AboutTechnologyImage"></figure>
+        <h2>About Technology in Watchmaking</h2>
+        <span>1st February,2024</span>
+        <p>
+            Several technologies are used during the process of watchmaking.Those.....
+
+        </p>
+        <div id="author">Rohan Subba</div>
+    </article>
+    <article id="second" class="article" onclick="clickedonArticle(this)">
+        <figure><img src="../images/positive.jpg" alt="PositiveImpactImage"></figure>
+        <h2>Positive Impact of Technology in the Watch Industry</h2>
+        <span>1st February,2024</span>
+        <p>
+            Several technologies are used during the process of watchmaking.Those.....
+
+        </p>
+        <div id="author">Prince Bajgain</div>
+    </article>
+    <article id="third" class="article" onclick="clickedonArticle(this)">
+        <figure><img src="../images/negative.jpg" alt="NegativeImpactImages"></figure>
+        <h2>Negative Impact of Technology in the Watch Industry</h2>
+        <span>1st February,2024</span>
+        <p>
+            Several technologies are used during the process of watchmaking.Those....
+
+        </p>
+        <div id="author">Roshan Babu Lamichhane</div>
+    </article>
+    <article id="fourth" class="article" onclick="clickedonArticle(this)">
+        <figure><img src="../images/manwatch.jpg" alt="ManWatch"></figure>
+        <h2>How Technology Can Boost Watch Sales</h2>
+        <span>1st February,2024</span>
+        <p>
+            Several technologies are used during the process of watchmaking.Those....
+
+        </p>
+        <div id="author">Aayush Neupane</div>
+    </article>
+    <article id="fifth" class="article" onclick="clickedonArticle(this)">
+        <figure><img src="../images/conclusion.jpg" alt="ConclusionImage"></figure>
+        <h2>Overall Conclusion on Technology in the Watch Industry</h2>
+        <span>1st February,2024</span>
+        <p>
+            Several technologies are used during the process of watchmaking.Those....
+
+        </p>
+        <div id="author">Sangam Shrestha</div>
+    </article>
+    </section>
+    <section id="singlearticle" style="display: none;">
+    <article id="firstarticle" style="display: none;">
+        <div id="left">
+            <figure><img src="../images/about.jpg" alt="AboutTechnologyImage"></figure>
+            <h2>About Technology in Watchmaking</h2>
+            <span>1st February,2024</span>
+            <p>
+                Several technologies are used during the process of watchmaking.Those<span> technologies severely impact the process of development of watches.
+                Advanced technologies like Silicon and Ceramics are used in the process of watchmaking to enhance the durability and precision of developed
+                watches . Several breakthough in micro-engineering enables the process of development of watch to be more benofittable.</span>
+
+            </p>
+            <button id="goback" onclick="refresh()">Go Back</button>
+            
+            <div id="authorofArticle">Rohan Subba</div>
+        </div>
+        <div id="right">
+            <h3>Related Articles :</h3>
+            <ul>
+                <li onclick="positiveCase()">Positive Impact</li> 
+                <li onclick="negativeCase()">Negative Impact</li> 
+                <li onclick="howCase()">How Technology Can Boost Watch Sales</li> 
+            </ul>
+        </div>
+        
+        </article>
+        <article id="secondarticle" style="display: none;">
+        <div id="left">
+            <figure><img src="../images/positive.jpg" alt="PositiveImpactImage"></figure>
+            <h2>Positive Impact of Technology in the Watch Industry</h2>
+            <span>1st February,2024</span>
+            <p>
+                Several technologies are used during the process of watchmaking.Those<span> technologies severely impact the process of development of watches.
+                Advanced technologies like Silicon and Ceramics are used in the process of watchmaking to enhance the durability and precision of developed
+                watches . Several breakthough in micro-engineering enables the process of development of watch to be more benofittable.</span>
+
+            </p>
+            <button id="goback" onclick="refresh()">Go Back</button>
+            <div id="authorofArticle">Prince Bajgain</div>
+        </div>
+        <div id="right">
+            <h3>Related Articles :</h3>
+            <ul> 
+                <li onclick="howCase()">How Technology Can Boost Watch Sales</li> 
+            </ul>
+        </div>
+        
+        </article>
+        <article id="thirdarticle" style="display: none;">
+        <div id="left">
+            <figure><img src="../images/negative.jpg" alt="NegativeImage"></figure>
+            <h2>Negative Impact of Technology in the Watch Industry</h2>
+            <span>1st February,2024</span>
+            <p>
+                Several technologies are used during the process of watchmaking.Those<span> technologies severely impact the process of development of watches.
+                Advanced technologies like Silicon and Ceramics are used in the process of watchmaking to enhance the durability and precision of developed
+                watches . Several breakthough in micro-engineering enables the process of development of watch to be more benofittable.</span>
+
+            </p>
+            <button id="goback" onclick="refresh()">Go Back</button>
+            <div id="authorofArticle">Roshan Babu Lamichhane</div>
+        </div>
+        <div id="right">
+            <h3>Related Articles :</h3>
+            <ul>
+                <li onclick="howCase()">How Technology Can Boost Watch Sales</li> 
+            </ul>
+        </div>
+        
+        </article>
+        <article id="fourtharticle" style="display: none;">
+        <div id="left">
+            <figure><img src="../images/manwatch.jpg" alt="ManWatch"></figure>
+        <h2>How Technology Can Boost Watch Sales</h2>
+        <span>1st February,2024</span>
+        <p>
+            Several technologies are used during the process of watchmaking.Those<span> technologies severely impact the process of development of watches.
+            Advanced technologies like Silicon and Ceramics are used in the process of watchmaking to enhance the durability and precision of developed
+            watches . Several breakthough in micro-engineering enables the process of development of watch to be more benofittable.</span>
+
+        </p>
+        <button id="goback" onclick="refresh()">Go Back</button>
+        <div id="authorofArticle">Aayush Neupane</div>
+        </div>
+        <div id="right">
+            <h3>Related Articles :</h3>
+            <ul>
+                <li onclick="positiveCase()">Positive Impact</li> 
+                <li onclick="negativeCase()">Negative Impact</li> 
+            </ul>
+        </div>
+        
+        </article>
+        <article id="fiftharticle" style="display: none;">
+        <div id="left">
+            <figure><img src="../images/manwatch.jpg" alt="ManWatch"></figure>
+        <h2>Overall Conclusion on Technology in the Watch Industry</h2>
+        <span>1st February,2024</span>
+        <p>
+            Several technologies are used during the process of watchmaking.Those<span> technologies severely impact the process of development of watches.
+            Advanced technologies like Silicon and Ceramics are used in the process of watchmaking to enhance the durability and precision of developed
+            watches . Several breakthough in micro-engineering enables the process of development of watch to be more benofittable.</span>
+
+        </p>
+        <button id="goback" onclick="refresh()">Go Back</button>
+        <div id="authorofArticle">Sangam Shrestha</div>
+        </div>
+        <div id="right">
+            <h3>Related Articles :</h3>
+            <ul>
+                <li onclick="aboutCase()">About Technology in Watchmaking</li>
+                <li onclick="positiveCase()">Positive Impact</li> 
+                <li onclick="negativeCase()">Negative Impact</li> 
+                <li onclick="howCase()">How Technology Can Boost Watch Sales</li> 
+            </ul>
+        </div>
+        </article>
+    </section>
+</main>
+<!-- Creating The Footer Section -->
+
+<footer>
+    <div id="upper">
+      <span id="siteLogo">watchget.</span>
+      <div id="left">
+        <h3>Account</h3>
+        <ul>
+          <li>My Account</li>
+          <li>Order History</li>
+          <li>Notification Settings</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+      <div id="second">
+        <h3>Quick Links</h3>
+        <ul>
+          <li onclick="home()">Home</li>
+          <li onclick="blog()">Blog</li>
+          <li onclick="product()">Product</li>
+          <li>Research</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div id="third">
+        <h3>Shop Now</h3>
+        <ul>
+          <li id="smartt">Smart Watches</li>
+          <li id="luxuryy">Luxury watches</li>
+          <li id="normall">Normal Watches</li>
+        </ul>
+      </div>
+      <div id="last">
+        <h3>Help</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>Community Guidelines</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lower">
+      <img src="../images/social.png" width="30px" alt="FacebookIcon">
+      <img src="../images/instagram.png" width="30px" alt="InstagramIcon">
+    </div>
+  </footer>
+<script src="../javascript/blog.js"></script>
+
+</body>
+</html>

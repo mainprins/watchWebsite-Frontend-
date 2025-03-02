@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <!--Personal Portfolio started-->
+    <div class="hero-2">
+      
+        <nav>
+            <h2 class="logo">personal <span>portfolio</span></h2>
+            
+        </nav>
+        <div class="contact">
+            <div class="row">
+            
+            <h4>Hello,my name is </h4>
+            <h1>Ayush Neupane</h1>
+            <h3>I helped my team design Blog Page</h3>
+            <br>
+            <h1>Contact Me</h1>
+            <a href="https://www.instagram.com/aayush.neupane.3950" target="_blank" >
+                <img src="../images/aboutUsPageImages/ins.png">
+            </a>
+        </div>
+        <div class="newlatter">
+            <h1 class="sub">About Me</h1>
+            <div class="table">
+            <p class="tabs inactive" onclick="opentab('technical skills')">Technical Skills</p>
+            <p class="tabs" onclick="opentab('educational background')">Educational Backgrounds</p>
+            <p class="tabs" onclick="opentab('certification')">Certification</p>
+        </div>
+        <!-- personal portfolio members skilss,educational background and certification inclusion-->
+        <div class="contents active" id="technical skills">
+            <ul>
+                <li><span>IT Student</span><br>Studying IT in Ithari International Collage</li>
+                <li><span>Webpage Designing</span><br>I can do webpage Designing and still learning</li>
+            </ul>
+        </div>
+        <div class="contents active" id="educational background">
+            <ul>
+                <li><span>10th<br></span>I completed my 10th from <br>Adarsha English School,Kanepokhari.</li>
+                <li><span>11th&12th <br></span>i completed my +2 from <br>Panchayat Secondari school,Pathri.</li>
+            </ul>
+        </div>
+        <div class="contents active" id="certification">
+            <ul>
+                <li><span>Board-Exam</span><br>+2 passed certificate</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+   
+    
+</body>
+<script>
+    var tabs = document.getElementsByClassName("tab");
+    var contents = document.getElementsByClassName("contents");
+
+    function opentab(tabname){
+       //for(tab of tabs){
+           // tab.classList.remove("inactive");
+       // }
+        for(content of contents){
+            content.classList.remove("active");
+        }
+       // event.currentTarget.classList.add("inactive");
+        document.getElementById(tabname).classList.add("active")
+    }
+</script>
+</html>

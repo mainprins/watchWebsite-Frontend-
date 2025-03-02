@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <title>Products</title>
+</head>
+
+<body>
+    <!-- Creating the Navbar -->
+    <nav id="navbar">
+        <span id="siteLogo" onclick="refresh()">watchget.</span>
+        <div id="menus">
+            <span id="home" onclick="home()">Home</span>
+            <span id="blog" onclick="blog()">Blog</span>
+            <span id="product" onclick="product()">Product</span>
+            <span id="research" onclick="research()">Research</span>
+            <span id="aboutUs" onclick="about()">About Us</span>
+        </div>
+    </nav>
+    <!-- Creating the searchbar -->
+    <div id="searchbar">
+        <img src="../images/searchicon.png" alt="searchIcon">
+        <input type="text" placeholder="search for products" id="searchProducts" onkeyup="searchProducts()">
+    </div>
+    <div id="categoryChecker">
+        <div id="all" tabindex="0">
+            <span>All</span>
+        </div>
+        <div id="smart" tabindex="0">
+            <span>Smart</span>
+        </div>
+        <div id="luxury" tabindex="0">
+            <span>Luxury</span>
+        </div>
+        <div id="normal" tabindex="0">
+            <span>Normal</span>
+        </div>
+    </div>
+    <!-- Creating the list of products -->
+    <main id="productsList">
+
+        <div class="product luxury all" id="product1">
+            <figure class="itemSection">
+                <img src="../images/gmt2.jpg" alt="gmt2">
+            </figure>
+            <span class="nameSection">Rolex GMT II</span>
+            <p class="paraSection">Rolex GMT II is a wonderful product of rolex brand<br></p>
+            <span class="priceSection">NPR 29,22,465 </span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+        <div class="product luxury all" id="product2">
+            <figure class="itemSection">
+                <img src="../images/datejust.jpg" alt="datejust">
+            </figure>
+            <span class="nameSection">Rolex DateJust</span>
+            <p class="paraSection">Rolex DateJust is a wonderful product of rolex brand</p>
+            <span class="priceSection">NPR 273,779.90</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+        <div class="product luxury all" id="product3">
+            <figure class="itemSection">
+                <img src="../images/submariner.jpg" alt="submariner">
+            </figure>
+            <span class="nameSection">Rolex Submariner</span>
+            <p class="paraSection">Rolex Submariner is a wonderful product of rolex brand<br></p>
+            <span class="priceSection">NPR 300000 </span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+    
+        <div class="product smart all" id="product4">
+            <figure class="itemSection">
+                <img src="../images/omegaseamaster.jpg" alt="omegaseamaster">
+            </figure>
+            <span class="nameSection">Omega Seamaster</span>
+            <p class="paraSection">It is best for sea-diving<br>it has very nice water resistance and style</p>
+            <span class="priceSection">NPR 450,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+
+        <div class="product normal all" id="product5">
+            <figure class="itemSection">
+                <img src="../images/patekphilip.jpg" alt="patekphilip">
+            </figure>
+            <span class="nameSection">Patek Philippe Nautilus</span>
+            <p class="paraSection">Patek Philippe Nautilus with beautiful design<br>A luxury watch with brilliant features</p>
+            <span class="priceSection">NPR 800,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+
+        <div class="product luxury all" id="product6">
+            <figure class="itemSection">
+                <img src="../images/audemars.jpg" alt="audemars">
+            </figure>
+            <span class="nameSection">Audemars Piguet Royal Oak</span>
+            <p class="paraSection">The Audemars Piguet Royal Oak is wonderful luxury watch<br>Known for its elegance and durability</p>
+            <span class="priceSection">NPR 1,200,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+
+        <div class="product normal all" id="product7">
+            <figure class="itemSection">
+                <img src="../images/monaco.jpg" alt="Monaco">
+            </figure>
+            <span class="nameSection">Tag Heuer Monaco</span>
+            <p class="paraSection">The Tag Heuer Monaco with precision timekeeping<br>a beautiful watch to wear</p>
+            <span class="priceSection">NPR 350,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+    
+        <div class="product normal all" id="product8">
+            <figure class="itemSection">
+                <img src="../images/navitimer.jpg" alt="navitimer">
+            </figure>
+            <span class="nameSection">Breitling Navitimer</span>
+            <p class="paraSection">best for person in aviation industry<br>with brilliant functionalities</p>
+            <span class="priceSection">NPR 750,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+
+        <div class="product normal all" id="product9">
+            <figure class="itemSection">
+                <img src="../images/iwc.jpg" alt="iwc">
+            </figure>
+            <span class="nameSection">IWC Big Pilot</span>
+            <p class="paraSection">IWC Big Pilot is a classic watch<br>Known for its functionalities</p>
+            <span class="priceSection">NPR 620,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+    
+        <div class="product normal all" id="product10">
+            <figure class="itemSection">
+                <img src="../images/daydate.jpg" alt="daydate">
+            </figure>
+            <span class="nameSection">Rolex Day-Date</span>
+            <p class="paraSection">Rolex Day-Date has classic features<br>it is a luxuriopus watch</p>
+            <span class="priceSection">NPR 1,500,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+
+    
+        <div class="product normal all" id="product11">
+            <figure class="itemSection">
+                <img src="../images/ballonbleu.jpg" alt="ballonbleu">
+            </figure>
+            <span class="nameSection">Cartier Ballon Bleu</span>
+            <p class="paraSection">Cartier Ballon Bleu with beautiful design<br>it has followed all design principles</p>
+            <span class="priceSection">NPR 950,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+        <div class="product smart all" id="product12">
+            <figure class="itemSection">
+                <img src="../images/samsungsmartwatch.jpg" alt="smartwatchsamsung">
+            </figure>
+            <span class="nameSection">Samsung Smart Watch</span>
+            <p class="paraSection">Samsung smart watch has beautiful design<br>it has followed all design principles</p>
+            <span class="priceSection">NPR 50,000.00</span>
+            <div class="container">
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x checked" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+                <span class="fa fa-star fa-2x" onclick="rate(this)"></span>
+            </div>
+            <div class="buynowSection" onclick="add(this)">
+                <span>Add To Cart</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Creating Your Carts with the Items in the Cart -->
+
+    <div id="cart">
+        <h1>YOUR CART</h1>
+        <div id="list">
+            <div id="noItems">
+                <span>No items are in the cart.</span>
+            </div>
+        </div>
+        <button id="purchase" onclick="purchase()">Purchase</button>
+    </div>
+    <!-- Creating The Footer Section -->
+
+  <footer>
+    <div id="upper">
+      <span id="siteLogo">watchget.</span>
+      <div id="left">
+        <h3>Account</h3>
+        <ul>
+          <li>My Account</li>
+          <li>Order History</li>
+          <li>Notification Settings</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+      <div id="second">
+        <h3>Quick Links</h3>
+        <ul>
+          <li onclick="home()">Home</li>
+          <li onclick="blog()">Blog</li>
+          <li onclick="product()">Product</li>
+          <li>Research</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div id="third">
+        <h3>Shop Now</h3>
+        <ul>
+          <li id="smartt">Smart Watches</li>
+          <li id="luxuryy">Luxury watches</li>
+          <li id="normall">Normal Watches</li>
+        </ul>
+      </div>
+      <div id="last">
+        <h3>Help</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>Community Guidelines</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lower">
+      <img src="../images/social.png" width="30px" alt="FacebookIcon">
+      <img src="../images/instagram.png" width="30px" alt="InstagramIcon">
+    </div>
+  </footer>
+    <script src="../javascript/product.js"></script>
+</body>
+
+</html>
