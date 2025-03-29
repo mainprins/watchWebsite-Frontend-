@@ -1,4 +1,4 @@
-# watchWebsite-Frontend-
+# watchWebsite-Frontend-(From Scratch)
 This is an website create by me and my friends as a college project . This website is named as Watchget.
 
 We were given to create a ecommerce website that sells the watch to the customers . The
